@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы валют</title>
+    <link rel="stylesheet" href="./style.css"
+</head>
+<body>
+    <div class="container1" id="cont">
+        <div class="tit">
+            <h1 id="tit">Курсы валют на</h1>
+        </div>
+        <table>
+            <tr>
+                <th>Валюта</th>
+                <th>Буквенный код валюты</th>
+                <th>Кол-во ед. ин. валюты</th>
+                <th>Покупка</th>
+                <th>Продажа</th>
+                <th>Официальный курс РБ РБ</th>
+            </tr>
+
+            <tr>
+                <td class="one_td" id="name_dol"> Доллар США</td>
+                <td class="one_td" id="kod_dol">2</td>
+                <td class="one_td" id="num_dol">3</td>
+                <td class="one_td" id="poc_dol">4</td>
+                <td class="one_td" id="pr_dol">5</td>
+                <td class="one_td" id="nb_dol">6</td>
+            </tr>
+
+            <tr>
+                <td id="name_evr">Евро</td>
+                <td id="kod_evr">2</td>
+                <td id="num_evr">3</td>
+                <td id="poc_evr">4</td>
+                <td id="pr_evr">5</td>
+                <td id="nb_evr">6</td>
+
+            </tr>
+
+            <tr>
+                <td class="one_td" id="name_rubl">Российский рубль</td>
+                <td class="one_td" id="kod_rubl">2</td>
+                <td class="one_td" id="num_rubl">3</td>
+                <td class="one_td" id="pok_rubl">4</td>
+                <td class="one_td" id="pr_rubl">5</td>
+                <td class="one_td" id="nb_rubl">6</td>
+            </tr>
+
+            <tr>
+                <td id="name_Gr">Гривна</td>
+                <td id="kod_Gr">2</td>
+                <td id="num_Gr">3</td>
+                <td id="pok_Gr">4</td>
+                <td id="pr_Gr">5</td>
+                <td id="nb_Gr">6</td>
+            </tr>
+
+            <tr>
+                <td class="one_td" id="name_teng">Тенге</td>
+                <td class="one_td" id="kod_teng">2</td>
+                <td class="one_td" id="num_teng">3</td>
+                <td class="one_td" id="pok_teng">4</td>
+                <td class="one_td" id="pr_teng">5</td>
+                <td class="one_td" id="nb_teng">6</td>
+            </tr>
+        </table>
+
+
+        <div class="convert" id="convert">
+            <h2>Конвертор валют:</h2>
+            <span>Сумма в белорусских рублях:</span><input type="text" id="conv_BLR" value="1">
+            <select name="valuta" id="valuta" size="1">
+                <option value="dolar">Доллар США</option>
+                <option value="evro">Евро</option>
+                <option value="r_rub">Российский рубль</option>
+                <option value="grivna">Гривна</option>
+                <option value="teng">Тенге</option>
+            </select>
+            <input type="text" id="result" value="Результат">
+            <input type="submit" value="Конвертировать" onclick="getValue(URL_BLR)">
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
